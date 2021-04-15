@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if lap %}
+    <h1>Product details available</h1>
+    {% elif mob %}
+    <h1>Product details available</h1>
+    {% elif moba %}
+    <h1>Product details available</h1>
+    {% else %}
+    <h1>Product details not available</h1>
+    {% endif %}
+
+    <div>
+        {% for l in lap %}
+        <h3>{{l.comapany_name}}</h3>
+        <h3>{{l.model_name}}</h3>
+        <h3>{{l.category}}</h3>
+        <h3>{{l.description}}</h3>
+        <h3>{{l.amount}}</h3>
+        {% endfor %}
+        <hr>
+    </div>
+
+    <div>
+        {% for m in mob %}
+        <h3>{{m.comapany_name}}</h3>
+        <h3>{{m.model_name}}</h3>
+        <h3>{{m.category}}</h3>
+        <h3>{{m.description}}</h3>
+        <h3>{{m.amount}}</h3>
+        {% endfor %}
+        <hr>
+
+    </div>
+
+    <div>
+        {% for ma in moba %}
+        <h3>{{ma.comapany_name}}</h3>
+        <h3>{{ma.model_name}}</h3>
+        <h3>{{ma.category}}</h3>
+        <h3>{{ma.description}}</h3>
+        <h3>{{ma.amount}}</h3>
+        {% endfor %}
+        <hr>
+    </div>
+</body>
+</html>
